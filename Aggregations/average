@@ -1,6 +1,0 @@
--- Purpose: Calculate average order value
--- Concept: AVG aggregation
--- Dataset: orders table
-
-SELECT AVG(amount) AS avg_order_value
-FROM orders;
