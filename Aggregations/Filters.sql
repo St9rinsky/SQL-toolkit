@@ -2,6 +2,7 @@
 -- Concept: WHERE clause filtering rows
 -- Use case: Filtering individual rows BEFORE grouping and aggregation (controls input data)
 -- Dataset: orders table
+-- Conditions: =, >, <, >=, <=, <>, AND, OR, NOT, BETWEEN, IN, LIKE, IS NULL
 
 SELECT *
 FROM orders
