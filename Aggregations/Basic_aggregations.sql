@@ -45,3 +45,24 @@ FROM orders;
 SELECT MAX(amount) AS largest_order
 FROM orders;
 
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+-- Purpose: Retrieve the top N highest-priced cars
+-- Concept: LIMIT (PostgreSQL/MySQL), TOP (SQL Server)
+-- Use case: Top-N analysis and ranking
+-- Dataset: car_prices table
+-- Execution logic: Rows are sorted first (ORDER BY), then limited to N results
+
+-- Postgress--
+SELECT *
+FROM car_prices
+ORDER BY price DESC
+LIMIT 5;
+
+--SQL Server--
+SELECT TOP 5
+FROM car_prices
+ORDER BY price DESC
+LIMIT 5;
+
