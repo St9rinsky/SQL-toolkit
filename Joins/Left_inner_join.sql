@@ -11,4 +11,14 @@ FROM customers c
 LEFT JOIN orders o
 ON c.customer_id = o.customer_id;
 
+----------------------------------------------------------------------------------------------------------------------------------------
 -- concept is the same for RIGHT INNER JOIN
+----------------------------------------------------------------------------------------------------------------------------------------
+
+-- purpose: finding unmatched rows
+
+SELECT c.customer_id, c.customer_name
+FROM customers c
+LEFT JOIN orders o
+ON c.customer_id = o.customer_id
+WHERE o.customer_id IS NULL;
